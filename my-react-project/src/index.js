@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HomePage from './Pages/HomePage';
-import AboutPage from './Pages/AboutPage';
-import BlogsPage from './Pages/BlogaPage';
+import A_jsUse from './Pages/A_js use';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-      //<HomePage/>
-      // <AboutPage/>
-       <BlogsPage/>
+      <A_jsUse/>
 );
 
