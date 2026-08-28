@@ -22,6 +22,8 @@ export default function D_reactObject(){
             <p>candidate designation : {cadidate.designation}</p>
             <button onClick={ () => setCandidate({...cadidate,name :"sudhan"})}>new Name</button>
             {/* ... -->When updating one property of an object stored in React state */}
+
+            <button onClick = { () => setCandidate({...cadidate, name : "Sudharsan"})}>old name</button>
           </div>
         </>
     )

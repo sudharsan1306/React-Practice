@@ -12,7 +12,7 @@ export default function C_reactArray() {
             </div>
 
             <div>
-                {actors.map((value, index) => <p>{value}</p>)}
+                {actors.map((value,index) => <p>{ value}</p>)}
             </div>
         </>
     )
