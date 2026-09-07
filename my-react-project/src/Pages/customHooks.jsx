@@ -1,6 +1,10 @@
-export default function customHooks(){
+import { useState } from 'react'
+import custom from '../core'
 
+export default function CustomHooks(){
 
+const[lang,setLang]= usestate()
+const content = useLanguage(lang)
 
 
     return(
@@ -13,6 +17,9 @@ export default function customHooks(){
               <option value="eng">English</option>
                <option value="tam">Tamil</option>
           </select>
+          <div>
+             
+          </div>
         </>
     )
 }
