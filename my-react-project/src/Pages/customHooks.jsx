@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import custom from '../core'
+import { useLanguage } from '../core/custom'
 
 export default function CustomHooks(){
 
-const[lang,setLang]= usestate()
+   const[lang,setLang] = useState("eng")
 const content = useLanguage(lang)
-
+//console.log(useLanguage)
 
     return(
         <>
@@ -13,12 +13,16 @@ const content = useLanguage(lang)
             <h3>candidate details</h3>
           </div>
 
-          <select >
-              <option value="eng">English</option>
+          <select onChange ={(e)=>setLang(e.target.value)} >
+              <option value="eng" >English</option>
                <option value="tam">Tamil</option>
           </select>
           <div>
-             
+           <h3>{content.Name}</h3>
+            <p>{content.Degree}</p>
+            <p>{content["Current Course"]}</p>
+            <p>{content.email}</p>
+            <p>{content["mobile no"]}</p>
           </div>
         </>
     )
