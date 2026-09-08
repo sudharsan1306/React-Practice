@@ -5,7 +5,7 @@ export default function FetchCustomHooks(){
 
    const[lang,setLang] = useState("eng")
 const content = useLanguage(lang)
-//console.log(useLanguage)
+console.log("useLanguage===>",useLanguage)
 
 const api = useFetch("https://fakestoreapi.com/products")
 
